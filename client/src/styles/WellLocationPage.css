@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f8f8f8, #ededed);
+    color: #111;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.main-container h1 {
+    font-size: 2rem;
+    color: #b71c1c;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+
+.location {
+    background-color: #fff;
+    border: 2px solid #b71c1c;
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.location p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #b71c1c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .main-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .location {
+        padding: 1rem;
+    }
+
+    .location p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+}

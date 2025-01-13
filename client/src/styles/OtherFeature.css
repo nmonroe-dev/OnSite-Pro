@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: black; 
+    color: #fff;
+}
+
+
+.other-feature-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.other-feature-back-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #b71c1c; 
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.other-feature-back-button:hover {
+    background-color: white;
+    color: #b71c1c;
+    border: 2px solid #b71c1c;
+    transform: scale(1.05);
+}
+
+
+.other-feature-block {
+    width: 80%;
+    max-width: 900px;
+    background-color: #2e2e2e; 
+    border: 2px solid #b71c1c; 
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.other-feature-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.other-feature-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+
+.other-feature-button button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: #b71c1c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.other-feature-button button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.1);
+}
+
+
+.other-feature-button i {
+    font-size: 1.5rem;
+    color: linear-gradient(to bottom, #f8f8f8, #ededed); 
+}
+
+
+.other-feature-button p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .other-feature-block {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .other-feature-buttons {
+        gap: 1rem;
+    }
+
+    .other-feature-button button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .other-feature-button i {
+        font-size: 1.2rem;
+    }
+
+    .other-feature-button p {
+        font-size: 0.9rem;
+    }
+}

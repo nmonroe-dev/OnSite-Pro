@@ -1,0 +1,6 @@
+get http://localhost:4004/user/getwell/677c10c134d499ff92a9a6d9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2JmOTRlMzJkNGE2Yjg5ZGI1MmQ4NCIsInVzZXJuYW1lIjoidGVzdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjIwMjEwMiwiZXhwIjoxNzM2Mjg0OTAyfQ.O7crDZAXzZbY6qNJDG567cQRtDbAEwrnNF-joIw3qRw
+
+
+
+

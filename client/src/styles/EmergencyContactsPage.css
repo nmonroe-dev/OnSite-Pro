@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f8f8f8, #ededed); 
+    color: #111;
+}
+
+
+.emergency-contacts-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto; 
+    background-color: #fff; 
+    border: 2px solid #b71c1c; 
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+
+.emergency-contacts-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #b71c1c; 
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.emergency-contacts-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.emergency-contacts-container li {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background-color: #f8f8f8; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.emergency-contacts-container li strong {
+    color: #b71c1c; 
+    font-weight: bold;
+}
+
+
+.emergency-contacts-container li a {
+    color: #b71c1c; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.emergency-contacts-container li a:hover {
+    text-decoration: underline;
+}
+
+
+.emergency-contacts-container p {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 1rem 0;
+}
+
+
+@media (max-width: 768px) {
+    .emergency-contacts-container {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .emergency-contacts-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .emergency-contacts-container li {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
