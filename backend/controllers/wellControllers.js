@@ -226,7 +226,7 @@ exports.uploadJsa = async (req, res) => {
                 $set: {
                     jsa: {
                         filename: req.file.filename,
-                        filepath: `/uploads/jsa/${req.file.filename}`,
+                        filepath: `https://onsite-pro-backend.onrender.com/uploads/jsa/${req.file.filename}`,
                         uploadedBy: userId, 
                         uploadedAt: new Date(),
                     },
