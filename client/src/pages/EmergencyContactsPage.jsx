@@ -25,7 +25,7 @@ function EmergencyContactsPage() {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.get(
-                    `http://localhost:4004/user/${selectedWell}/emergencyContacts`,
+                    `https://onsite-pro-backend.onrender.com/user/${selectedWell}/emergencyContacts`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

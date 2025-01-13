@@ -16,7 +16,7 @@ function JsaPage() {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.get(
-                    `http://localhost:4004/user/${selectedWell}/jsa`,
+                    `https://onsite-pro-backend.onrender.com/user/${selectedWell}/jsa`,
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }
@@ -35,7 +35,7 @@ function JsaPage() {
         try {
             const token = localStorage.getItem("token");
             const response = await axios.post(
-                `http://localhost:4004/user/${selectedWell}/acknowledgeJsa`,
+                `https://onsite-pro-backend.onrender.com/user/${selectedWell}/acknowledgeJsa`,
                 { userId: localStorage.getItem("userId") }, // Assuming user ID is stored
                 {
                     headers: { Authorization: `Bearer ${token}` },
@@ -60,7 +60,7 @@ function JsaPage() {
                 <div className="jsa-content">
                     <p><strong>File Name:</strong> {jsaFile.filename}</p>
                     <img
-                        src={`http://localhost:4004${jsaFile.filepath}`}
+                        src={`https://onsite-pro-backend.onrender.com${jsaFile.filepath}`}
                         alt="JSA"
                         className="jsa-image"
                     />

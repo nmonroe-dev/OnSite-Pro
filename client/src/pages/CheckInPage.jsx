@@ -23,7 +23,7 @@ function CheckInPage() {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.get(
-                    `http://localhost:4004/user/${selectedWell}/checkedInUsers`,
+                    `https://onsite-pro-backend.onrender.com/user/${selectedWell}/checkedInUsers`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

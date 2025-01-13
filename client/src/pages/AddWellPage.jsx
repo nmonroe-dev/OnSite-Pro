@@ -34,7 +34,7 @@ function AddWellPage() {
 
         try {
             const response = await axios.post(
-                "http://localhost:4004/user/well",
+                "https://onsite-pro-backend.onrender.com/user/well",
                 wellData,
                 config
             );

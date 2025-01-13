@@ -20,7 +20,7 @@ function WellLocationPage() {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.get(
-                    `http://localhost:4004/user/getwell/${selectedWell}`,
+                    `https://onsite-pro-backend.onrender.com/user/getwell/${selectedWell}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

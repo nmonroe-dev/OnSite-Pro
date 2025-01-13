@@ -23,7 +23,7 @@ function NearestHospitalPage() {
 
                 
                 const response = await axios.get(
-                    `http://localhost:4004/user/getwell/${selectedWell}`,
+                    `https://onsite-pro-backend.onrender.com/user/getwell/${selectedWell}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ function NearestHospitalPage() {
                 };
 
                 const mapResponse = await axios.post(
-                    "http://localhost:4004/user/map",
+                    "https://onsite-pro-backend.onrender.com/user/map",
                     { hospitalLocation: structuredAddress },
                     {
                         headers: {

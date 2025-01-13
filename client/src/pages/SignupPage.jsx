@@ -15,7 +15,7 @@ function SignupPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:4004/register", {
+            const response = await axios.post("https://onsite-pro-backend.onrender.com/register", {
                 username,
                 password,
                 role,

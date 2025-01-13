@@ -25,7 +25,7 @@ function DashboardPage() {
         const fetchUserDetails = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const response = await axios.get("http://localhost:4004/user/userDetail", {
+                const response = await axios.get("https://onsite-pro-backend.onrender.com/user/userDetail", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -40,7 +40,7 @@ function DashboardPage() {
         const fetchWells = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const response = await axios.get("http://localhost:4004/user/wells", {
+                const response = await axios.get("https://onsite-pro-backend.onrender.com/user/wells", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -71,7 +71,7 @@ function DashboardPage() {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.post(
-                    `http://localhost:4004/user/${selectedWell}/checkin`,
+                    `https://onsite-pro-backend.onrender.com/user/${selectedWell}/checkin`,
                     { userId },
                     {
                         headers: {
@@ -88,7 +88,7 @@ function DashboardPage() {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.post(
-                    `http://localhost:4004/user/${selectedWell}/checkout`,
+                    `https://onsite-pro-backend.onrender.com/user/${selectedWell}/checkout`,
                     { userId },
                     {
                         headers: {

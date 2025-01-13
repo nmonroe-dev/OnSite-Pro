@@ -37,7 +37,7 @@ function UploadJsa() {
         try {
             const token = localStorage.getItem("token");
             const response = await axios.post(
-                "http://localhost:4004/user/uploadJsa",
+                "https://onsite-pro-backend.onrender.com/user/uploadJsa",
                 formData,
                 {
                     headers: {
