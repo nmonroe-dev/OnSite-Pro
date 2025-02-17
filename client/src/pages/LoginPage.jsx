@@ -32,6 +32,17 @@ function LoginPage() {
         <div className="loginPage-container">
             <div className="login-form">
                 <h1>Login to On-Site Pro</h1>
+
+                {/* Demo Account Box */}
+                <div className="demo-account-box">
+                    <h3>Demo Account</h3>
+                    <p><strong>Username:</strong> demoUser</p>
+                    <p><strong>Password:</strong> DemoPass123</p>
+                    <p className="server-delay-note">
+                        Note: This app runs on a free server. Please allow up to 55 seconds for the backend to wake up.
+                    </p>
+                </div>
+
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
@@ -59,3 +70,4 @@ function LoginPage() {
 }
 
 export default LoginPage;
+

@@ -86,3 +86,28 @@ body {
         font-size: 1rem;
     }
 }
+/* Styling for the Demo Account Box */
+.demo-account-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid #b71c1c;
+}
+
+.demo-account-box h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #b71c1c;
+}
+
+.server-delay-note {
+    font-size: 0.8rem;
+    color: red;
+    margin-top: 10px;
+}
+
