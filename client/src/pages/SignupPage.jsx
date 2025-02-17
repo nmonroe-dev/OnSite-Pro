@@ -1,17 +1,15 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/SignupPage.css"; 
+import "../styles/SignupPage.css";
 import axios from "axios";
 
 function SignupPage() {
-    
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [role, setRole] = useState("contractor"); 
     const [error, setError] = useState(""); 
     const navigate = useNavigate();
 
-    
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -22,7 +20,6 @@ function SignupPage() {
             });
 
             if (response.status === 201) {
-                
                 navigate("/loginPage");
             }
         } catch (error) {
@@ -39,7 +36,7 @@ function SignupPage() {
                     
                     <input
                         type="text"
-                        placeholder="Name"
+                        placeholder="Username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                         required
@@ -62,8 +59,20 @@ function SignupPage() {
                     >
                         <option value="contractor">Contractor</option>
                         <option value="vendor">Vendor</option>
-                        <option value="admin">Admin</option>
+                        <option value="admin">Admin (Full Access)</option>
                     </select>
+
+                    {/* Admin Warning */}
+                    {role === "admin" && (
+                        <p className="admin-warning">
+                             Admin role grants full access to the system.
+                        </p>
+                    )}
+
+                    {/* Server Wakeup Notice */}
+                    <p className="server-delay-note">
+                        Note: After signing up, please allow up to 55 seconds for the backend to wake up before logging in.
+                    </p>
 
                     
                     {error && <p className="error-message">{error}</p>}
@@ -77,3 +86,4 @@ function SignupPage() {
 }
 
 export default SignupPage;
+

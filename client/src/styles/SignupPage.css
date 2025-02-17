@@ -95,3 +95,15 @@ body {
         font-size: 1rem;
     }
 }
+.admin-warning {
+    color: #b71c1c;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.server-delay-note {
+    font-size: 0.85rem;
+    color: red;
+    margin-top: 10px;
+}
